@@ -1,0 +1,32 @@
+# Kubernetes / ArgoCD secrets
+k8s/argocd-secret.yaml
+*.secret.yaml
+*.argocd-cm.yaml
+*.argocd-cm-backup.yaml
+*.env
+*.key
+*.crt
+*.pem
+
+# Editor / IDE files
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Linux
+*.swp
+*~
+
+# Logs / temp files
+*.log
+*.tmp
+*.bak
+
+# Node / Python temp files (if applicable)
+node_modules/
+npm-debug.log
+__pycache__/
+*.py[cod]
+*.pyo

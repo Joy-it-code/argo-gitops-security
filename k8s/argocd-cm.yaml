@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+data:
+  url: http://localhost:8080/api/dex/callback
+  dex.config: |
+    connectors:
+    - type: oidc
+      id: google
+      name: Google
+      config:
+        issuer: https://accounts.google.com
+        clientID: 1007000406783-u4i5i2rn50c3uan8km537ta3j64053v4.apps.googleusercontent.com
+        clientSecret: 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
+        redirectURI: https://localhost:8080/api/dex/callback
