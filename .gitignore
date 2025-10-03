@@ -31,3 +31,4 @@ __pycache__/
 *.py[cod]
 *.pyo
 k8s/
+argocd-cm-backup.yaml
